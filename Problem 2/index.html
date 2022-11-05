@@ -1,13 +1,3 @@
-<!-- 
-    Problem Statement 2
-
-    Event: CSS Battle
-    Tagline: Battle It Out - The CSS Version
-    Problem Statement designed by: 
-    Prakhar Gupta
-    (MCA Final Year)
-    Departmental Co-ordinator, CSED
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Product Card</title>
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
 </head>
 <body>
     <div class="product-card">
-        <span id="discount">- 18%</span>
-        <div class="img">
-            <img src="tshirt.jpeg"> <!-- You can change this line -->
-        </div>
+
+        <div id="circleBase type1">- 18%</div>
+        <div class="figure">
+            <img class="Sirv image-main" src="tshirt.jpeg" data-src="tshirt.jpeg">
+            <img class="Sirv image-hover" data-src="back.jpeg">
+            </a>
+          </div>
+
         <div class="product-details">
             <div class="prod-name-price">
                 <div class="prod-name">
-                    <span>Addidas Original</span>
-                    <span>Premium Quality T-Shirt</span>
+                    <p id="title">Addidas Original</p>
+                    <span id="subtitle">Premium Quality T-Shirt</span>
                 </div>
                 <div class="prod-price">
                     <span>₹290</span>
                     <span><s>₹400</s></span>
                 </div>
-            </div>
+        </div>
+
             <div class="size">
                 <div class="sizes">
                     <input type="radio" id="s" name="size" value="s" />
@@ -46,6 +42,7 @@
                     <label for="xl">XL</label>
                 </div>
             </div>
+
             <div class="tag-quantity">
                 <div class="tag">
                     <span>Application Club</span>
@@ -56,9 +53,10 @@
                     <button>-</button>
                 </div>
             </div>
+
             <div class="btn">
-                <button type="submit">Add To Cart</button>
-                <button type="submit">Buy Now</button>
+                <button type="submit" id="add">Add To Cart</button>
+                <button type="submit" id="buy">Buy Now</button>
             </div>
         </div>
     </div>
